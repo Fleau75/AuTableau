@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gestion de Soutenance</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Gestion des Soutenances</h1>
+        </header>
+
+        <main>
+            <section class="class-section">
+                <h2>Classes</h2>
+                <ul id="classList"></ul>
+                <input
+                    type="text"
+                    id="classInput"
+                    placeholder="Nom de la classe"
+                />
+                <button id="addClass">Ajouter une Classe</button>
+            </section>
+
+            <section class="student-section">
+                <h2>
+                    Étudiants de la classe :
+                    <span id="classTitle">Aucune classe sélectionnée</span>
+                </h2>
+                <ul id="studentList"></ul>
+                <input
+                    type="text"
+                    id="studentInput"
+                    placeholder="Nom de l'étudiant"
+                />
+                <button id="addStudent" disabled>Ajouter un Étudiant</button>
+            </section>
+
+            <section class="random-student">
+                <h2>Soutenance</h2>
+                <button id="randomStudentBtn" disabled>
+                    Appeler un étudiant au hasard
+                </button>
+                <p id="randomStudentResult">
+                    Aucun étudiant n'a encore été appelé.
+                </p>
+                <button id="resetButton" disabled>
+                    Réinitialiser la soutenance
+                </button>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
